@@ -1,0 +1,20 @@
+/* AirportService.css */
+.airport-list {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .airport-list-item {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .airport-details {
+    margin-top: 20px;
+  }
+.todolist{
+   margin: 30px;
+}
+.item{
+    margin-right: 50px;
+}

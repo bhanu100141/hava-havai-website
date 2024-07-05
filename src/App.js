@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HeaderComponent from './components/HeaderComponent';
+import NavbarComponent from './components/NavbarComponent';
+import AirportService from './services/AirportService';
+import './App.css'; // Import your main CSS file
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        <HeaderComponent userName="Your Name" />
+        <div className="content-container">
+          <NavbarComponent />
+          <main className="main-content">
+            <Routes>
+              <Route path="/services/airport" element={<AirportService />} />
+            </Routes>
+          </main>
+        </div>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

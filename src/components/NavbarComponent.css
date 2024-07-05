@@ -1,0 +1,19 @@
+/* src/components/NavbarComponent.css */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .navbar a:hover {
+    color: #0078d4; /* Change color on hover */
+  }
+  
